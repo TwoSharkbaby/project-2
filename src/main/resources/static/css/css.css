@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+.mainPicture {
+	height: 20em;
+	width: 13em;
+	margin-right: 1em;
+	border: solid 1px white;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: inherit;
+}
+
+body {
+	background-color: black;
+}
+
+html, body {
+	height: 100%;
+}
+
+.content {
+	min-height: calc(100% - 11em); /* 푸터 높이가 100px 일 때 */
+}
+
+.content2 {
+	min-height: calc(100% - 11em); /* 푸터 높이가 100px 일 때 */
+}
+
+.footer {
+	height: 11em; /* 푸터 높이 */
+}
+
+.detailPicture {
+	height: 15em;
+	width: 10em;
+	margin-top: 1em;
+	margin-right: 1em;
+	border: solid 1px white;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+hr {
+	border: solid 1px white;
+}
+
+.personPicture {
+	height: 4em;
+	width: 4em;
+	margin-top: 1em;
+	margin-right: 1em;
+	border: solid 1px white;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+#filmmaker {
+	width: 25em;
+	margin-left: 3em;
+	margin-right: 4em;
+}
+
+#filmmakerImg img {
+	height: 15em;
+	width: 11em;
+	margin-top: 0.5em;
+	margin-right: 1.5em;
+	margin-bottom: 1em;
+	border-radius: 10px;
+}
+
+#review {
+	width: 53em;
+	margin: auto;
+}
+
+#review li {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	border-color: white;
+}
+
+#myform fieldset {
+	display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+	direction: rtl; /* 이모지 순서 반전 */
+	border: 0; /* 필드셋 테두리 제거 */
+}
+
+#myform fieldset legend {
+	text-align: left;
+}
+
+#myform input[type=radio] {
+	display: none; /* 라디오박스 감춤 */
+}
+
+#myform label {
+	font-size: 3em; /* 이모지 크기 */
+	color: transparent; /* 기존 이모지 컬러 제거 */
+	text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
+}
+
+#myform label:hover {
+	text-shadow: 0 0 0 #F2CC0D; /* 마우스 호버 */
+}
+
+#myform label:hover ~ label {
+	text-shadow: 0 0 0 #F2CC0D; /* 마우스 호버 뒤에오는 이모지들 */
+}
+
+#myform input[type=radio]:checked ~ label {
+	text-shadow: 0 0 0 #F2CC0D; /* 마우스 클릭 체크 */
+}
+
+#upDown {
+	border: none;
+	background-color: transparent;
+	height: 0em;
+}
+
+#pMargin p {
+	line-height: 1em;
+}
+
+.pagination .page-link {
+	background-color: #666;
+	color: #fff;
+	border-color: #666;
+}
+
+.pagination .page-item.active .page-link {
+	background-color: #333;
+	border-color: #333;
+}
+
+.page-item.disabled .page-link {
+	color: #b1b1b1;
+	background-color: #666;
+	border-color: #666;
+}
+
+#board {
+	width: 63em;
+	margin: auto;
+	color: #fff;
+}
+
+#line {
+	border: solid 1px black;
+	border-top-color: gray;
+	border-bottom-color: gray;
+	padding: 0.4em;
+	font-weight: bold;
+}
+
+#line2 {
+	border: solid 1px black;
+	border-top-color: gray;
+	border-bottom-color: gray;
+	padding: 0.5em;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#line2 #s {
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+#line3 {
+	border: solid 1px black;
+	border-top-color: gray;
+	border-bottom-color: gray;
+	padding: 0.4em;
+	font-size: 1em;
+}
+
+#line3 #s {
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+#notice {
+	border: solid 1px black;
+	border-bottom-color: gray;
+	padding: 0.4em;
+	font-weight: bold;
+	background-color: #3e3e3e;
+}
+
+#normal {
+	border: solid 1px black;
+	border-bottom-color: gray;
+	padding: 0.4em;
+}
+
+#boardSave {
+	background-color: white;
+	padding: 1.5em;
+	border-radius: 10px;
+}
+
+#board a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#board a:hover {
+	color: inherit;
+	text-decoration: underline;
+}
+
+#board2 {
+	width: 63em;
+	margin: auto;
+	color: #fff;
+	border-bottom: solid 1px gray;
+}
+#reply {
+	width: 45em;
+}
+
+#replyButton {
+	width: 6em;
+	height: 6.3em;
+}
+
+:root {
+  --reply-indent: 1.5em;
+}
+
+#reply1 {
+	width: 53em;
+	margin: auto;
+}
+
+#reply1 li {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	border-color: white;
+	border: solid white 1px;
+	border-radius: 10px;
+}
