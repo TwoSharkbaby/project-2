@@ -38,10 +38,10 @@ public class MovieReview {
 	private String content;
 
 	@Column(nullable = false)
-	private Long good = 0L;
+	private Long good;
 
 	@Column(nullable = false)
-	private Long bad = 0L;
+	private Long bad;
 	
 	@Column(nullable = false, length = 16)
 	private String nickname;

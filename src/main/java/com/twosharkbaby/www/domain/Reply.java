@@ -35,10 +35,10 @@ public class Reply {
 	private String content;
 
 	@Column(nullable = false)
-	private Long good = 0L;
+	private Long good;
 
 	@Column(nullable = false)
-	private Long bad = 0L;
+	private Long bad;
 	
 	@Column(nullable = false, length = 16)
 	private String nickname;
@@ -58,11 +58,11 @@ public class Reply {
 	private Timestamp createDate;
 	
 	@Column(nullable = false)
-	private Long grp = 0L;
+	private Long grp;
 	
 	@Column(nullable = false)
-	private Long seq = 0L;
+	private Long seq;
 	
 	@Column(nullable = false)
-	private Long dep = 0L;
+	private Long dep;
 }

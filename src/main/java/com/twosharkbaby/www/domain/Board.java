@@ -53,13 +53,13 @@ public class Board {
 	private RoleType role;
 	
 	@Column(nullable = false)
-	private Long counting = 0L;
+	private Long counting;
 	
 	@Column(nullable = false)
-	private Long good = 0L;
+	private Long good;
 
 	@Column(nullable = false)
-	private Long bad = 0L;
+	private Long bad;
 	
 	@ManyToOne(fetch = FetchType.EAGER) // many = board, one = user, EAGER = 모든정보 다 들고옴
 	@JoinColumn(name="userId")
