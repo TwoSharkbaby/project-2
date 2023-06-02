@@ -28,7 +28,7 @@ import lombok.NoArgsConstructor;
 public class MovieReview { 
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // 배포
 	private Long id;
 
 	@Column(nullable = false, length = 100)
