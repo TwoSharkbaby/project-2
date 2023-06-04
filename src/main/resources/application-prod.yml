@@ -14,8 +14,8 @@ spring:
       suffix: .jsp
 
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://twosharkbaby.c2jtd6qr2aek.ap-northeast-2.rds.amazonaws.com:3306/twosharkbaby?serverTimezone=Asia/Seoul
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+    url: jdbc:mysql://twosharkbaby.c2jtd6qr2aek.ap-northeast-2.rds.amazonaws.com/twosharkbaby?serverTimezone=Asia/Seoul
     username: twosharkbaby
     password: twosharkbaby1234
 
@@ -91,3 +91,7 @@ cos:
 
 sentry:
   dsn: https://1a09553c692940108a8022b96cbf4a9a@o4504348879749120.ingest.sentry.io/4504348882042880
+
+logging:
+  level:
+    '[org.springframework.boot.web]': INFO
