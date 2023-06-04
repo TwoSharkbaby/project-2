@@ -26,9 +26,9 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl # Entity 변수명을 그대로 사용해서 컬럼만듬
       use-new-id-generator-mappings: false # JAP넘버링 전략을 사용하지 않음
-    show-sql: true # Console 창에 쿼리문 보여줌
     properties:
-      hibernate.format_sql: true # Console 창에 쿼리문 이쁘게 해줌
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
 
   jackson:
     serialization:
