@@ -31,6 +31,8 @@ public class ReviewServiceImpl implements ReviewService {
 
 	@Transactional
 	public int save(MovieReview movieReview) {
+		movieReview.setBad(0L);
+		movieReview.setGood(0L);
 		if (reviewRepository.findByMovieIdAndUserId(movieReview.getMovie().getId(),
 				movieReview.getUser().getId()) == null) {
 			MovieReview tmp = reviewRepository.save(movieReview);

@@ -35,6 +35,8 @@ public class ReplyServiceImpl implements ReplyService {
 	public Reply save(Reply reply) {
 		Long replyId = reply.getId();
 		if(replyId != null) { // 답글
+			reply.setGood(0L);
+			reply.setBad(0L);
 			Reply origin = replyRepository.findById(reply.getId());
 			Long seq = replyRepository.getAvailableSeq(origin); // 위치 찾기
 			if(seq == null) { // 위치를 못찾으면 해당 그룹의 마지막에 추가하기 위해 카운트
@@ -46,7 +48,15 @@ public class ReplyServiceImpl implements ReplyService {
 			reply.setGrp(origin.getGrp()); // 그룹 유지
 			reply.setSeq(seq); // 계산된 seq
 			reply.setDep(origin.getDep()+1); // 차수 증가
-		} 
+		}
+
+		if (reply.getGrp() == null){
+			reply.setGrp(0L);
+			reply.setDep(0L);
+			reply.setSeq(0L);
+			reply.setGood(0L);
+			reply.setBad(0L);
+		}
 		
 		Reply result = replyRepository.save(reply);
 		

@@ -45,6 +45,9 @@ public class BoardServiceImpl implements BoardService{
 
 	@Transactional
 	public Board save(Board board) {
+		board.setCounting(0L);
+		board.setGood(0L);
+		board.setBad(0L);
 		if (board.getRole() == RoleType.ROLE_ADMIN) {
 			board.setType(BoardType.공지);
 			return boardRepository.save(board);
