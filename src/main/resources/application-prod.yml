@@ -60,12 +60,12 @@ spring:
               - profile
             client-name: Naver
             authorization-grant-type: authorization_code
-            redirect-uri: http://54.180.55.161:8000/login/oauth2/code/naver
+            redirect-uri: http://twosharkbaby.shop/login/oauth2/code/naver
 
           kakao:
             client-id: 1eb3f873da90b74d1341e933e7988121
             client-secret: VGYEJuG7YVD6ynyBqKOLDQoWl2wkJePo
-            redirect-uri: http://54.180.55.161:8000/login/oauth2/code/kakao
+            redirect-uri: http://twosharkbaby.shop/login/oauth2/code/kakao
             client-authentication-method: POST
             authorization-grant-type: authorization_code
             client-name: Kakao

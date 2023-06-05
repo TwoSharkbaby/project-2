@@ -18,7 +18,6 @@
 			<ul style="list-style: none; margin-left: -2em" class="mt-2">
 				<li class="mb-2"><a href="/joinForm"><button class="btn btn-secondary fw-bold" style="width: 16.5em; height: 2.8em">일반 회원가입</button></a></li>
 				<li class="mb-2"><a href="/oauth2/authorization/google"><img width="267em" src="/image/구글.png"></a></li>
-				<li class="mb-2"><a href="/oauth2/authorization/facebook"><img width="266em" src="/image/페이스북.png"></a></li>
 				<li class="mb-2"><a href="/oauth2/authorization/naver"><img width="266em" src="/image/네이버.png"></a></li>
 				<li class="mb-2"><a href="/oauth2/authorization/kakao"><img width="266em" src="/image/카카오.png"></a></li>
 			</ul>
