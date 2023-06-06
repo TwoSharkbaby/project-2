@@ -8,14 +8,13 @@ plugins {
 group = 'com.twosharkbaby'
 version = '0.0.1'
 sourceCompatibility = '11'
+apply plugin: 'war'
 
 bootWar{			
 	archiveBaseName = 'twosharkbaby'
     archiveFileName = 'twosharkbaby.war'
     archiveVersion = "0.0.1"
 }
-
-apply plugin: 'war'
 
 configurations {
 	compileOnly {
@@ -49,8 +48,4 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
-}
-
-jar {
-	enabled = false 
 }

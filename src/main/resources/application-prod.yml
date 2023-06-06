@@ -1,6 +1,7 @@
 server:
-  port: 5000
+  port: 8000
   servlet:
+    context-path: /
     encoding:
       charset: UTF-8
       enabled: true
@@ -9,14 +10,14 @@ server:
 spring:
   mvc:
     view:
-      prefix: /WEB-INF/views/
+      prefix: /WEB-INF/jsp/
       suffix: .jsp
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver 
-    url: jdbc:mysql://twosharkbaby.c2jtd6qr2aek.ap-northeast-2.rds.amazonaws.com/twosharkbaby?serverTimezone=Asia/Seoul
-    username: twosharkbaby
-    password: twosharkbaby1234
+    url: -
+    username: -
+    password: -
 
   jpa:
     open-in-view: true # FetchType.LAZY 사용할려면 true 컨트롤러 시작과 끝에서 영속성 컨텐츠가 열리고 닫힘
@@ -43,13 +44,6 @@ spring:
             scope:
               - email
               - profile
-
-          facebook:
-            client-id: -
-            client-secret: -
-            scope:
-              - email
-              - public_profile
 
           naver:
             client-id: -
