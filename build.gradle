@@ -12,8 +12,10 @@ sourceCompatibility = '11'
 bootWar{			
 	archiveBaseName = 'twosharkbaby'
     archiveFileName = 'twosharkbaby.war'
-    archiveVersion = "0.0.0"
+    archiveVersion = "0.0.1"
 }
+
+apply plugin: 'war'
 
 configurations {
 	compileOnly {
