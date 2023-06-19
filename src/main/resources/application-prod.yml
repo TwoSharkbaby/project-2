@@ -15,9 +15,9 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver 
-    url: -
-    username: -
-    password: -
+    url: jdbc:mysql://twosharkbaby.c2jtd6qr2aek.ap-northeast-2.rds.amazonaws.com/twosharkbaby?serverTimezone=Asia/Seoul
+    username: twosharkbaby
+    password: twosharkbaby1234
 
   jpa:
     open-in-view: true # FetchType.LAZY 사용할려면 true 컨트롤러 시작과 끝에서 영속성 컨텐츠가 열리고 닫힘
@@ -39,15 +39,15 @@ spring:
       client:
         registration:
           google:
-            client-id: -
-            client-secret: -
+            client-id: 317834341435-hek2dtg1j7ebfmp9puqmllck8vcsclab.apps.googleusercontent.com
+            client-secret: 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
             scope:
               - email
               - profile
 
           naver:
-            client-id: -
-            client-secret: -
+            client-id: YWRWjrkRH0P0qlAuDANG
+            client-secret: zqI7Sq5WJb
             scope:
               - name
               - profile
@@ -56,8 +56,8 @@ spring:
             redirect-uri: http://twosharkbaby.shop/login/oauth2/code/naver
 
           kakao:
-            client-id: -
-            client-secret: -
+            client-id: 1eb3f873da90b74d1341e933e7988121
+            client-secret: VGYEJuG7YVD6ynyBqKOLDQoWl2wkJePo
             redirect-uri: http://twosharkbaby.shop/login/oauth2/code/kakao
             client-authentication-method: POST
             authorization-grant-type: authorization_code
