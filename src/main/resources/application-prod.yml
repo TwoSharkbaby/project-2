@@ -39,15 +39,15 @@ spring:
       client:
         registration:
           google:
-            client-id: 317834341435-hek2dtg1j7ebfmp9puqmllck8vcsclab.apps.googleusercontent.com
-            client-secret: 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
+            client-id: -
+            client-secret: -
             scope:
               - email
               - profile
 
           naver:
-            client-id: YWRWjrkRH0P0qlAuDANG
-            client-secret: zqI7Sq5WJb
+            client-id: -
+            client-secret: -
             scope:
               - name
               - profile
@@ -56,8 +56,8 @@ spring:
             redirect-uri: http://twosharkbaby.shop/login/oauth2/code/naver
 
           kakao:
-            client-id: 1eb3f873da90b74d1341e933e7988121
-            client-secret: VGYEJuG7YVD6ynyBqKOLDQoWl2wkJePo
+            client-id: -
+            client-secret: -
             redirect-uri: http://twosharkbaby.shop/login/oauth2/code/kakao
             client-authentication-method: POST
             authorization-grant-type: authorization_code
@@ -83,7 +83,7 @@ cos:
   key: twosharkbaby
 
 sentry:
-  dsn: https://1a09553c692940108a8022b96cbf4a9a@o4504348879749120.ingest.sentry.io/4504348882042880
+  dsn: -
 
 logging:
   level:
